@@ -1,0 +1,37 @@
+Title = 'User settings for pulling sequences from online repositories with Mycopull.'
+
+[user_info]
+name    = ''
+email   = ''  # required if pulling information from GenBank; NCBI needs to track
+pull_id = ''  # unique name to identify this information pull
+
+[repositories]
+genbank.include     = true   # do you want to include collections from GenBank?
+genbank.type_only   = true   # do you want to only include type specimens?
+
+mycoportal.include  = true   # do you want to include collections from MyCoPortal?
+
+inaturalist.include = true   # do you want to include collections from iNaturalist?
+
+
+[collection_details]
+date.earliest = 1991-05-27    # what is the earliest collection date you want to include (YYYY-MM-DD)
+date.latest   = 2024-01-20    # what is the most recent collection date you want to include (YYYY-MM-DD)
+
+location.name    = ''
+location.state   = 'AZ'
+location.county  = ''
+location.country = 'USA'
+location.lat     = ''
+location.lon     = ''
+
+
+[taxonomy]
+include.kingdom  = []
+include.phylum   = []
+include.division = []
+include.class    = []
+include.order    = []
+include.family   = []
+include.genus    = []
+include.species  = []
